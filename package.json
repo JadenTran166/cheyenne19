@@ -1,0 +1,82 @@
+{
+  "name": "cheyenne19",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^27.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@date-io/date-fns": "1.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.3.10",
+    "@material-ui/styles": "^4.11.4",
+    "@reduxjs/toolkit": "^1.5.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "bootstrap-daterangepicker": "^3.1.0",
+    "ckeditor5-custom-build": "file:ckeditor5",
+    "classnames": "^2.2.6",
+    "customize-cra": "^1.0.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.20",
+    "material-table": "^1.69.1",
+    "moment": "^2.29.0",
+    "notistack": "^1.0.0",
+    "react": "^16.14.0",
+    "react-app-env": "^1.2.3",
+    "react-d3-tree": "^3.1.1",
+    "react-bootstrap-daterangepicker": "^7.0.0",
+    "react-data-export": "^0.6.0",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^6.15.4",
+    "react-multi-select-component": "^4.1.12",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.2",
+    "react-slideshow-image": "^3.3.0",
+    "socket.io-client": "^3.0.4",
+    "sweetalert2": "^10.6.1",
+    "tinycolor2": "^1.4.2",
+    "validator": "^13.1.17",
+    "xlsx": "^0.17.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "startDev": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:dev": "env-cmd -f .env react-app-rewired build",
+    "build:staging": "env-cmd -f .env.staging react-app-rewired build",
+    "build:ckeditor": "cd ./ckeditor5 && npm install && npm run build && cd ../ && npm install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "./config-overrides.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra-eslint": "^0.1.3",
+    "env-cmd": "^10.1.0",
+    "react-app-rewired": "^2.1.8"
+  }
+}

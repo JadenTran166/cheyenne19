@@ -1,0 +1,71 @@
+{
+  "_id": "123",
+  "site_id": "abc",
+  "product_supplier": {
+    "public": true,
+    "connected": true,
+    "vip": true
+  },
+  "settings": [
+    {
+      "key": "product_supplier",
+      "label": "Nguồn hàng (chi tiết sản phẩm)",
+      "description": "Quyết định ai dược xem Nguồn hàng trong trang Chi tiết sản phẩm",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    },
+    {
+      "key": "ingredients",
+      "label": "Nguyên liệu",
+      "description": "Quyết định ai được xem danh sách nguyên liệu trong trang Chi tiết sản phẩm",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    },
+    {
+      "key": "ingredients_supplier",
+      "label": "Nguồn gốc nguyên liệu",
+      "description": "Quyết định ai được phép xem nguồn gốc của nguyên liệu trong trang Chi tiết sản phẩm",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    },
+    {
+      "key": "parent_companies",
+      "label": "Công ty (cha) cung cấp hàng cho mình",
+      "description": "Quyết định xem ai được phép xem danh sách các cung ty cung cấp hàng cho công ty của mình",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    },
+    {
+      "key": "child_companies",
+      "label": "Công ty (con) được mình cung cấp hàng",
+      "description": "Quyết định xem ai được phép xem danh sách các cung ty mà mình cung cấp hàng cho họ",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    },
+    {
+      "key": "dealing_receive",
+      "label": "Nhận yêu cầu thương lượng",
+      "description": "Quyết định xem ai được phép gửi yêu cầu thương lượng cho mình",
+      "value": {
+        "public": true,
+        "connected": true,
+        "vip": true
+      }
+    }
+  ]
+}

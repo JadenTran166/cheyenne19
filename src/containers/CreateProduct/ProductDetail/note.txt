@@ -1,0 +1,9 @@
+
+git config --global user.name "duccao"
+git config --global user.email "caovanducs@gmail.com"
+
+
+git clone https://oauth2:LHtRYJGNQKsHzfmTENZt@gitlab.com/kminacademy/germany_server.git
+
+xem flow
+productDetailimage

@@ -1,0 +1,4 @@
+export const ENV_API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
+export const ENV_ASSETS_ENDPOINT = process.env.REACT_APP_ASSETS_ENDPOINT;
+export const ENV_GERMANY_ENDPOINT = process.env.REACT_APP_GERMANY_DOMAIN;
+export const ENV_CHEYENNE_ENDPOINT = process.env.REACT_APP_CHEYENNE_DOMAIN;

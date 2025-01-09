@@ -1,0 +1,61 @@
+stages:
+  - build
+  - deploy
+
+build_dev:
+  stage: build
+  tags:
+    - nodejs
+  script:
+    - cd /var/www/dev/cheyenne19
+    - git fetch
+    - git checkout develop
+    - git pull origin develop
+    - npm install
+    - CI=false npm run build:dev
+  environment:
+    name: dev
+  only:
+    - develop
+
+deploy_dev:
+  stage: deploy
+  tags:
+    - nodejs
+  script:
+    - cd /var/www/dev/cheyenne19
+    - rsync -rav --delete build/ build_dev
+  environment:
+    name: dev
+  only:
+    - develop
+
+
+build_staging:
+  stage: build
+  tags:
+    - nodejs
+  script:
+    - cd /var/www/staging/cheyenne19
+    - git fetch
+    - git checkout master
+    - git pull origin master
+    - npm install
+    - CI=false npm run build:staging
+  environment:
+    name: staging
+  only:
+    - master
+
+deploy_staging:
+  stage: deploy
+  tags:
+    - nodejs
+  script:
+    - cd /var/www/staging/cheyenne19
+    - rsync -rav --delete build/ build_staging
+  when: manual
+  environment:
+    name: staging
+  only:
+    - master
